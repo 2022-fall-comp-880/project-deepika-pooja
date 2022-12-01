@@ -1,0 +1,26 @@
+rank,title,rating,votes,year,minutes,genre,gross
+1,Ramayana: The Legend of Prince Rama,9.2,"7,549",1993,97,"Animation, Action, Adventure",$12.05M
+2,Spirited Away,8.6,"756,112",2001,125,"Animation, Adventure, Family",$10.06M
+3,Meiji Tokyo Renka Movie: Yumihari no Serenade,8.5,39,2015,60,"Animation, Fantasy, Romance",$9.56M
+4,"Natsu e no tunnel, Sayonara no deguchi",8.5,23,2022,83,Animation,$18.77M
+5,Attack on Titan: Chronicle,8.5,"10,421",2020,122,"Animation, Action, Adventure",$20.05M
+6,Gintama: The Final,8.5,"2,381",2021,104,"Animation, Action, Comedy",$12.56M
+7,Grave of the Fireflies,8.5,"275,743",1988,89,"Animation, Drama, War",$6.34M
+8,Attack on Titan: The Roar of Awakening,8.4,"5,376",2018,120,"Animation, Action, Fantasy",$5.86M
+9,Your Name.,8.4,"265,332",2016,106,"Animation, Drama, Fantasy",$5.02M
+10,Princess Mononoke,8.4,"392,732",1997,134,"Animation, Action, Adventure",$2.38M
+11,Fresh Precure!,8.3,32,2009,70,"Animation, Action, Comedy",$7.88M
+12,Gintama the Movie: The Final Chapter - Be Forever Yorozuya,8.3,"2,711",2013,110,"Animation, Action, Comedy",$10.06M
+13,Gaiking II,8.3,23,2011,120,Animation,$3.09M
+14,Precure Allstars DX,8.3,88,2009,71,Animation,$8M
+15,From the Apennines to the Andes: The Movie,8.3,30,1980,107,"Animation, Adventure, Drama",$5M
+16,Conan the Future Boy: The Big Giant Robot's Resurrection,8.3,657,1984,49,"Animation, Adventure, Family",$4.88M
+17,Gekijouban Shimajirou no wao!: Shimajirou to kujira no uta,8.2,22,2014,53,"Animation, Adventure, Family",$10.32M
+18,Magnetic Rose,8.2,"2,677",1995,45,"Animation, Drama, Horror",$7.11M
+19,Demon Slayer the Movie: Mugen Train,8.2,"57,328",2020,117,"Animation, Action, Adventure",$47.70M
+20,Rascal Does Not Dream of a Dreaming Girl,8.2,"4,794",2019,89,"Animation, Drama, Family",$20M
+21,Howl's Moving Castle,8.2,"3,93,001",2004,119,"Animation, Adventure, Family",$4.71M
+22,Makoto-chan,8.2,49,1980,85,Animation,$4.98M
+23,Tistou the Green Thumb,8.1,30,1990,75,Animation,$0.04M
+24,A Silent Voice: The Movie,8.1,"81,298",2016,130,"Animation, Drama",$5.6M
+25,Wolf Children,8.1,"45,159",2012,117,"Animation, Drama, Family",$6.90M
