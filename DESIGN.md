@@ -2,7 +2,10 @@
 
 ## Design Document
 
+## Author: Deepika, Pooja Bandla
+
 ### class AnimeData:
+
 
     Represent a class anime .
 
@@ -84,5 +87,6 @@
 * Use the file variable append the tuple of read-lines with r-strip then split it into list with ,.
 * Use iterator variable line to get hold of each element in the list.
 * Return the list of class .
+
 
     
