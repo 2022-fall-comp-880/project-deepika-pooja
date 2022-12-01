@@ -67,7 +67,9 @@
              values: Integer,average of duration of genre
     Example: {Action: Avg of duration}
 
-
+* Assign the empty dictionary.
+* In a loop run the iteration variables with the condition of avg to get the output.
+* Return the dictionary.
 
 ### def read_dataset(filename: str) -> AnimeData:
 
