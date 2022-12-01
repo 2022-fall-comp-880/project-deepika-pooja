@@ -41,6 +41,8 @@
 
 * Define the inputs with enter the anime you like and number of recommendations to get the data from users.
 * Structure the for loop to run the iterations.
+* Taking data into consider check the every genre by the user given movie(genre).
+* After completion of all iteration of checking the genre it gets the list of movie based on the input.
 * Then return the list on based on the inputs.
 
 ### def gross_avg(self) -> dict:
@@ -56,7 +58,7 @@
     
 *  Assign the empty dictionary and an empty list.
 *  In for loop assign the Anime_info to iterable variable.
-*  define the syntax to run the loop and return the output. 
+*  Define the syntax to run the loop creates the ranges from the dataset and the average gross value in those years. 
 *  Return the output in the form of dictionary.
 
 
@@ -78,7 +80,9 @@
       Create the read dataset which return the anime object.
 
 * Use command `open` to the filename and instruct as `f.open`.
-* Then define the loop function .
-* Return the class.
+* Use the method read-lines,define the loop function. 
+* Use the file variable append the tuple of read-lines with r-strip then split it into list with ,.
+* Use iterator variable line to get hold of each element in the list.
+* Return the list of class .
 
     
