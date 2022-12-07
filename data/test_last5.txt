@@ -1,0 +1,6 @@
+rank,title,rating,votes,year,minutes,genre,gross
+96,Mobile Suit Gundam: The Origin IV - Eve of Destiny,7.7,462,2016,85,"Animation, Action, Drama",$3M
+97,Dou Kyu Sei: Classmates,7.7,"2,742",2016,60,"Animation, Drama, Music",$0.11M
+98,The Shimajiro Movie: Shimajiro in Bookland,7.7,25,2016,61,"Animation, Family",$1.05M
+99,In This Corner,7.7,"11,242",2016,129,"Animation, Drama, Family",$11M
+100,Asatte Dansu,7.7,10,1991,45,"Animation, Comedy, Romance",$2.56M
