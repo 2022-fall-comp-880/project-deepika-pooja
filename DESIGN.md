@@ -18,13 +18,13 @@
         Parameters:
             filename: string
 
-*Initialize the variables of self.filename and self.dic.
+* Initialize the variables of self.filename and self.dic.
 
 ### def __str__(self):
 
     Convert to string representation.
 
-*Return the self.filename.
+* Return the self.filename.
 
 ### def read_to_dict(self) -> dict:
         
