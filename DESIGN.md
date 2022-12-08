@@ -113,12 +113,12 @@
             float representing average gross in given years.
 
 * Create the method gross_avg with the parameter of year_list.
-* If the length of self.dic is equal to zero return zero.
-* Create a empty list gross_list to store the output.
+* If the given year is not in the self.dic make it to zero and return zero.
+* Create empty list gross_list to store the output.
 * In for loop assign the self.dic to g_a. 
   * If self.dic of g_a and year in year_list.
   * Append the self.dic of g_a and gross to gross_list.
-* If length of gross_list is equal to zero, return zero.
+* If given year doesn't have any gross avg make length of gross_list is equal to zero, return zero.
 * Return the sum of gross_list to the length of gross_list.
 
 ### def avg_genre_dur(self, genre: str) -> float:
@@ -135,11 +135,11 @@
             float representing average duration in given genre
 
 * Create the method avg_genre_dur with the parameter of genre.
-* If the length of self.dic is equal to zero return zero.
-* Create a empty list dur_list to store the output.
-   * Create for loop and call the genre_list function of genre and assign to a_d.
-      * Append the self.dic of a_d and duration to dur_list.
-   * if length of dur_list is equal to zero return zero.
+* If the given genre is not in the self.dic make it to equal zero and return zero.
+* Create empty list dur_list to store the output.
+* Create for loop and call the genre_list function of genre and assign to a_d.
+   * Append the self.dic of a_d and duration to dur_list.
+* if the length of dur_list is equal to zero return zero.
 * Return the sum of dur_list to the length of dur_list.
 
 ### def main()
