@@ -1,67 +1,57 @@
-"""
-Represent a data-set of NBA player information.
 
-Authors:
-
-"""
-
-
-class AnimeData:
-    """
-    Represent a class anime
-
-    Explain methods that transform input collections into something else.
-    """
-
-    def __init__(self, Anime_info):
+    def genre_list(self, genre: str) -> list:
         """
-        Make a class anime
-        Attributes:
-            Title: string
-            Gross-value: integer
-            Duration: integer
-            Genre: string
-        """
+        Create list of anime names with genre details.
 
-    def write(self, filename: str):
-        """
-        Data with anime moives
+        Note that each anime may come under multiple genres.
+        Creates and returns a list of anime that come under genre requested.
 
-        filename: filename to write data
-        """
+        Parameters:
+            genre: string
 
-    def recommended_anime(self) -> list:
+        Return:
+            list of str, each string being a anime under specified genre.
         """
-        return: List
-        Example: recommended_anime(Enter the anime you like, and we will find more like those for you  :death note
-        Please enter the number of recommendations you want:4
-        the anime recommended for you are :
-                 1 .  death note rewrite
-                 2 .  higurashi no naku koro ni kai
-                 3 .  jigoku shoujo mitsuganae
-                 4 .  yakushiji ryouko no kaiki jikenbo
-        """
+        return_list = []
+        for d_s in self.dic:
+            if genre in self.dic[d_s]['genre']:
+                # print(genre)
+                return_list.append(d_s)
+        # print(return_list)
+        return return_list
 
-    def gross_avg(self) -> dict:
+    def recommended_anime(self, anime_name: str, num_rmd: int) -> list:
         """
-        Ranges are "1980-1990", "1990-2000",
-        "2000-2005", and so on.
-        Ranges are determined based on the data-set.
+        Create a list of recommended anime.
 
-        Returns:dictionary
-                keys: Representing Year ranges
-                values: Average of those years gross value
-        Example: {1980-1990 : avg value of gross}
+        Return a list of anime names that are related to the reference anime
+        and return the top-rated animes if there are not enough
+        recommendations.
+
+        Parameter:
+            anime_name: str, name of the reference anime
+            num_rmd: int, number of recommendation required
+
+        Return:
+            list of str, each element representing recommended anime
         """
-
-    def avg_duration(self) -> dict:
-        """
-        Returns: dictionary
-                 keys: string, representing genre
-                 values: Integer,average of duration of genre
-        Example: {Action: Avg of duration}
-        """
-
-
-def read_dataset(filename: str) -> AnimeData:
-    """Create the read dataset which return the anime object."""
+        if len(self.dic) == 0 or anime_name not in self.dic:
+            return []
+        # print(anime_name)
+        anime_genre = self.dic[anime_name]
+        # print(anime_genre)
+        recommend = []
+        for r_m in anime_genre:
+            # print(i)
+            recommend = recommend + self.genre_list(r_m)
+        recommend = list(set(recommend))
+        if anime_name in recommend:
+            recommend.remove(anime_name)
+        if len(recommend) < num_rmd:
+            for n_m in self.dic:
+                if n_m not in recommend and n_m != anime_name:
+                    recommend.append(n_m)
+                if len(recommend) == num_rmd:
+                    break
+        # print(recommend[:num_rmd])
+        return recommend[:num_rmd]
