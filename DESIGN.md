@@ -98,6 +98,18 @@
        * If length of recommend is equal to number of recommendations break the loop.
 * Return the recommend based on number of recommendations.
 
+
+### def gross_avg(self, year_list) -> float:
+
+* Create the method gross_avg with the parameter of year_list.
+* If the length of self.dic is equal to zero return zero.
+* Create a empty list gross_list to store the output.
+* In for loop assign the self.dic to g_a. 
+  * If self.dic of g_a and year in year_list.
+  * Append the self.dic of g_a and gross to gross_list.
+* If length of gross_list is equal to zero, return zero.
+* Return the sum of gross_list to the length of gross_list.
+
 ### def avg_genre_dur(self, genre: str) -> float:
         
         Get the average duration of genre.
