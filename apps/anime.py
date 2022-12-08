@@ -1,5 +1,5 @@
 """
-Represent a data-set of developers.
+Represent a data-set of Top 100 Anime Moives.
 
 Authors:
   - https://github.com/???????????????
@@ -121,3 +121,19 @@ class AnimeData:
                     break
         # print(recommend[:num_rmd])
         return recommend[:num_rmd]
+
+
+def main():
+    """Run code to check basic functionality."""
+    print("ch")
+    data_dir = os.path.dirname(__file__) + "/../data"
+    ch = AnimeData(f'{data_dir}/top_100_anime_LIST.csv')
+    print(ch.dic)
+    print(ch.read_to_dict())
+    print(ch.recommended_anime('Ramayana: The Legend of Prince Rama', 1))
+    print(ch.gross_avg([2000]))
+    print(ch.avg_genre_dur('Action'))
+
+
+if __name__ == '__main__':
+    main()
