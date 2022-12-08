@@ -17,7 +17,38 @@
 
         Parameters:
             filename: string
+
 *Initialize the variables of self.filename and self.dic.
+
+### def __str__(self):
+
+    Convert to string representation.
+
+*Return the self.filename.
+
+### def read_to_dict(self) -> dict:
+        
+        Read data from a text file into a dict.
+
+        Reads from text file named in `self.filename` using `csv.reader()`
+        and creates a dictionary with the data in column `title` as keys and
+        values as a dictionary with column names 'rank', 'rating', 'votes',
+        'year', 'minutes','genre' and 'gross' as keys and their data as value.
+
+        Return:
+            dictionary keys: representing data points in column `title`
+            values: dictionary with key as column names and values as
+                    column data.
+
+* To read the test file into csv file and return the result into dictionary.
+* Create the empty dictionary `output_d` to store the output.
+* Use the command open and open the filename as csv file.
+* Assign the `csv.reader` to the csv file with a delimiter of comma to a reader.
+* Create for loop with count and row to the enumerator which adds the counter to the iterables`(reader)`.
+   * Create empty dictionary as element.
+   * Assign if statement as count not equal to zero then take each attribute,and it's type and row number expect the first row
+   * Assign the output_d of first row to the element.
+* Return the output_d.
 
 
 ### def genre_list(self, genre: str) -> list:
@@ -35,11 +66,11 @@
 
 * To get to recommend anime first create a method `genre_list` to get the anime-names based on genre.
 * In the method genre_list create the empty list as `return_list` to store the output.
-* Create for loop assign the `self.dict` which contains the titles to `d_s`.
+* Create the for loop and assign the `self.dict`(contains the titles) to `d_s`.
      * Within the for loop assign if statement.
      * Assign the self.dic of `d_s` and `genre` in genre iterator.
      * Append d_s to created return_list.
-* Return the `return_list` which return the result anime-names .
+* Return the `return_list` which return the result of anime-names .
 
 ### def recommended_anime(self, anime_name: str, num_rmd: int) -> list:
         
@@ -63,8 +94,8 @@
     * To remove the repetition in the return list use set to recommend list then remove the anime_name in the recommended which is not in that genre.
     * If len of recommend is less than number of recommendations 
        * Assign the for loop of self.dic to n_m.
-       * if n_m is not in recommend and not same to anime_name append the n_m to recommend.
-       * if length of recommend is equal to number of recommendations break the loop 
+       * If n_m is not in recommend and not same to anime_name append the n_m to recommend.
+       * If length of recommend is equal to number of recommendations break the loop.
 * Return the recommend based on number of recommendations.
 
 
