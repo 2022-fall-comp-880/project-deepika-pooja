@@ -10,6 +10,10 @@ class TestAverageGross(unittest.TestCase):
 
     def setUp(self):
 
+
+
+        """Create AnimeData objects for the four testing cases."""
+
         data_dir = os.path.dirname(__file__) + "/../data"
         self.empty = AnimeData(f'{data_dir}/test_empty.txt')
         self.starting5 = AnimeData(f'{data_dir}/test_first_data.txt')
