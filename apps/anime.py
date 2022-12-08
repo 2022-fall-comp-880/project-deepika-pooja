@@ -146,3 +146,25 @@ class AnimeData:
         print(gross_list)
         print(sum(gross_list) / len(gross_list))
         return sum(gross_list) / len(gross_list)
+
+    def avg_genre_dur(self, genre: str) -> float:
+        """
+        Get the average duration of genre.
+
+        using 'genre_list()' method identify the anime in those genre and
+        calculate the average duration.
+
+        Parameter:
+            genre: str representing genre
+
+        Return:
+            float representing average duration in given genre
+        """
+        if len(self.dic) == 0:
+            return 0.0
+        dur_list = []
+        for i in self.genre_list(genre):
+            dur_list.append(self.dic[i]['duration'])
+        if len(dur_list) == 0:
+            return 0
+        return sum(dur_list) / len(dur_list)
