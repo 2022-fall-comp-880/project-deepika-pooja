@@ -141,6 +141,24 @@
       * Append the self.dic of a_d and duration to dur_list.
    * if length of dur_list is equal to zero return zero.
 * Return the sum of dur_list to the length of dur_list.
+
+### def main()
+
+    Run code to check basic functionality.
+
+* In main give the director path to define the os.
+* Print the ch and assign the AnimeData with the fstring to the data_dir and csv file.
+* print the data of read_to_dict
+* print the data of recommended_anime('title')
+* print the data of gross_avg('year')
+* print the data of avg_genre_dur('action') 
+
+
+
+
+
+
+
  
 
 
