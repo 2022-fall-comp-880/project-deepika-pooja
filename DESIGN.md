@@ -98,9 +98,26 @@
        * If length of recommend is equal to number of recommendations break the loop.
 * Return the recommend based on number of recommendations.
 
+### def avg_genre_dur(self, genre: str) -> float:
+        
+        Get the average duration of genre.
 
+        using 'genre_list()' method identify the anime in those genre and
+        calculate the average duration.
 
+        Parameter:
+            genre: str representing genre
 
+        Return:
+            float representing average duration in given genre
+
+* Create the method avg_genre_dur with the parameter of genre.
+* If the length of self.dic is equal to zero return zero.
+* Create a empty list dur_list to store the output.
+   * Create for loop and call the genre_list funtion of genre and assign to a_d.
+      * Append the self.dic of a_d and duration to dur_list.
+   * if length of dur_list is equal to zero return zero.
+* Return the sum of dur_list to the length of dur_list.
  
 
 
