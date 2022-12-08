@@ -9,7 +9,11 @@ class TestAverageGross(unittest.TestCase):
     """Test `test_avg_gross()` method."""
 
     def setUp(self):
+
+
+
         """Create AnimeData objects for the four testing cases."""
+
         data_dir = os.path.dirname(__file__) + "/../data"
         self.empty = AnimeData(f'{data_dir}/test_empty.txt')
         self.starting5 = AnimeData(f'{data_dir}/test_first_data.txt')
@@ -26,8 +30,8 @@ class TestAverageGross(unittest.TestCase):
     def test_first_data(self):
         """Test case 2 using test_first_data.txt."""
         actual_result = self.starting5.recommended_anime(
-            'Ramayana: The Legend of Prince Rama', 1)
-        expected_result = ['Spirited Away']
+            'Ramayana: The Legend of Prince Rama', 2)
+        expected_result = ['Spirited Away', 'Meiji Tokyo Renka Movie: Yumihari no Serenade']
         self.assertListEqual(actual_result, expected_result)
 
     def test_last_data(self):
