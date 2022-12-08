@@ -17,7 +17,7 @@ class TestAverageGross(unittest.TestCase):
         self.full = AnimeData(f'{data_dir}/top_100_anime_LIST.csv')
 
     def test_empty(self):
-        """Test case 1 using test_empty.txt."""
+        """Test case 1 using test_first.txt."""
         actual_result = self.empty.avg_genre_dur('Action')
         expected_result = 0.0
         self.assertEqual(actual_result, expected_result)
