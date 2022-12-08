@@ -1,8 +1,8 @@
-## Comp880 Project
+## Comp880 Project Top 100 Anime Movies
 
 ## Design Document
 
-## Author: Deepika, Pooja Bandla
+## Author: G.Deepika, Pooja Bandla
 
 ### class AnimeData:
 
@@ -11,82 +11,66 @@
 
     Explains methods that transform input collections into something else.
 
-### def init(self, Anime_info):
+### def init(self, filename :str):
 
-    Make a class anime
-    Attributes: 
-            Title: string
-            Gross-value: integer
-            Duration: integer
-            Genre: string
+    Initialize instance variables.
 
-### def write(self, filename: str):
-
-    Data with anime moives
-    
-    filename: filename to write data to
-
-* Write with open method with filename as `anime_info_file_obj`.
-* Then in loop assign the required data.
-* define `anime_info_row` and use f-string to get the data. 
-* Write command data in `anime_info_file_obj` will be written into `anime_info_row`.
-
-### def recommended_anime(self) -> list:
-
-     return: List
-     Example: recommended_anime(Enter the anime you like and we will find more like those for you  :death note
-                      Please enter the number of recommendations you want:4
-     the anime recommended for you are :
-               1 .  death note rewrite
-               2 .  higurashi no naku koro ni kai
-               3 .  jigoku shoujo mitsuganae
-               4 .  yakushiji ryouko no kaiki jikenbo
-
-* Define the inputs with enter the anime you like and number of recommendations to get the data from users.
-* Structure the for loop to run the iterations.
-* Taking data into consider check the every genre by the user given movie(genre).
-* After completion of all iteration of checking the genre it gets the list of movie based on the input.
-* Then return the list on based on the inputs.
-
-### def gross_avg(self) -> dict:
-
-    Ranges are "1980-1990", "1990-2000",
-        "2000-2005", and so on.
-        Ranges are determined based on the data-set.
-    
-    Returns:dictionary
-            keys: Representing Year ranges
-            values: Average of those years gross value
-    Example: {1980-1990 : avg value of gross}
-    
-*  Assign the empty dictionary and an empty list.
-*  In for loop assign the Anime_info to iterable variable.
-*  Define the syntax to run the loop creates the ranges from the dataset and the average gross value in those years. 
-*  Return the output in the form of dictionary.
+        Parameters:
+            filename: string
+*Initialize the variables of self.filename and self.dic.
 
 
-### def avg_duration(self) -> dict:
+### def genre_list(self, genre: str) -> list:
+        
+        Create list of anime names with genre details.
 
-    Returns: dictionary
-             keys: string, representing genre
-             values: Integer,average of duration of genre
-    Example: {Action: Avg of duration}
+        Note that each anime may come under multiple genres.
+        Creates and returns a list of anime that come under genre requested.
+
+        Parameters:
+            genre: string
+
+        Return:
+            list of str, each string being a anime under specified genre.
+
+* To get to recommend anime first create a method `genre_list` to get the anime-names based on genre.
+* In the method genre_list create the empty list as `return_list` to store the output.
+* Create for loop assign the `self.dict` which contains the titles to `d_s`.
+     * Within the for loop assign if statement.
+     * Assign the self.dic of `d_s` and `genre` in genre iterator.
+     * Append d_s to created return_list.
+* Return the `return_list` which return the result anime-names .
+
+### def recommended_anime(self, anime_name: str, num_rmd: int) -> list:
+        
+        Create a list of recommended anime.
+
+        Return a list of anime names that are related to the reference anime
+        and return the top rated animes if there are not enough
+        recommendations.
+
+        Parameter:
+            anime_name: str, name of the reference anime
+            num_rmd: int, number of recommendation required
+
+        Return:
+            list of str, each element representing recommended anime
+
+* To create a list of recommended anime define the method `recommended_anime` with the parameters of anime_name which is string refers to the name of anime and num_rnd is integer refers to the number of recommendations required.If the given name is not in the self.dic then return nothing.
+* Assign the self.dic of anime_name to `anime_genre` and create empty list as `recommend`.
+* In for loop assign the anime_genre to r_m.
+    * Call the function genre_list with r_m to recommend.
+    * To remove the repetition in the return list use set to recommend list then remove the anime_name in the recommended which is not in that genre.
+    * If len of recommend is less than number of recommendations 
+       * Assign the for loop of self.dic to n_m.
+       * if n_m is not in recommend and not same to anime_name append the n_m to recommend.
+       * if length of recommend is equal to number of recommendations break the loop 
+* Return the recommend based on number of recommendations.
 
 
-* Assign the empty dictionary.
-* In a loop run the iteration variables with the condition of avg to get the output.
-* Return the dictionary.
 
 
-### def read_dataset(filename: str) -> AnimeData:
-
-      Create the read dataset which return the anime object.
-
-* Use command `open` to the filename and instruct as `f.open`.
-* Use the method read-lines,define the loop function. 
-* Use the file variable append the tuple of read-lines with r-strip then split it into list with ,.
-* Use iterator variable line to get hold of each element in the list.
-* Return the list of class .
+ 
 
 
     
