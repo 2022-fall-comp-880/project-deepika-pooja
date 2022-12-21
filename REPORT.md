@@ -1,4 +1,5 @@
 # Project Report
+## Authors: Pooja Bandla and G. Deepika
 
 ## 1. Purpose 
 
@@ -151,3 +152,31 @@
 * Define the actual_result over to the gross avg and select the genre.
 * Define the expected result that will be resulted the average of the select genre movies.
 * Use assert equal statement to justify the actual result is equal to expected result.
+
+
+*Alternative ways of getting and testing the results*.
+
+* `Pytest` can also be used for testing the results. It has benefits like supporting built in assert statement, filtering of test cases, returning from last failing test etc.
+
+
+## 4. Results 
+
+*def the method recommend_anime()->dict:* 
+* To create the list of recommended movies the input will be the dictionary form and the return output will be in list form.
+
+*def the method avg_gross()->float:*
+* To get the average from the list of years identify the anime released in those years.The input is form of list and the return output will be in the form of float which the average of selected year over the class AnimeData.
+
+*def the method avg_genre()->float:*
+* To get the average using `genre_list()` method identify the anime in those genre and calculate the average duration. The input will be the string and the output will be in the form of float which is the average of selected movies over the class AnimeData.
+
+## 5. Evaluation
+
+### 5.1 What Works and Scope Assumptions ###
+
+* By observing the data we got from the internet we assumed that the dats is correct through that we were able to find the movie recommended list based on the number of recommendations, average of the gross based on the year range and the average of the genre duration.
+
+### 5.2 Immediate Further Development ###
+
+*  To further development we can generate a rated method and get the most rated movies in the consider genre.
+*  We can further develop the recommend method and get the genre list according to the user requirements.
